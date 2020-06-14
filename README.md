@@ -3,6 +3,8 @@ Academic Degree Ontology
 
 ## Principles
 
+1. CC0/unlicense.  Anyone can use for any purpose.
+1. Open to all pull requests to add degrees.
 1. BFO upper level ontology
 1. OBO principles
 1. Develop and build principles
