@@ -1,0 +1,173 @@
+RDF Type	Class type	Parent	ID	See Also	Label	Label	Label	Label	Abbreviation	Definition	Editors Note	Citation
+TYPE	CLASS_TYPE	CI	ID	AI rdfs:seeAlso	AL rdfs:label@en	AL rdfs:label@es	AL rdfs:label@fr	AL rdfs:label@de	A IAO:0000605	AL IAO:0000115@en	AL IAO:0000116@en	AL IAO:0000119@en
+owl:Class	subclass	ADO:00001	ADO:00002		Associates Degree					Two years of study		
+owl:Class	subclass	ADO:00002	ADO:00003	http://vivoweb.org/ontology/degree/academicDegree127	Associate of Science Degree				AS	Two years focused on science		
+owl:Class	subclass	ADO:00002	ADO:00004	http://vivoweb.org/ontology/degree/academicDegree132	Associate of Arts Degree				AA	Two years focused on the arts		
+owl:Class	subclass	ADO:00001	ADO:00005		Bachelors Degree					Four years of study		
+owl:Class	subclass	ADO:00005	ADO:00006	http://vivoweb.org/ontology/degree/academicDegree4	Bachelor of Arts Degree				BA	Four years focused on the arts		
+owl:Class	subclass	ADO:00005	ADO:00007	http://vivoweb.org/ontology/degree/academicDegree33	Bachelor of Science Degree				BS	Four years focused on science		
+owl:Class	subclass	ADO:00001	ADO:00008		Masters Degree					Advanced study following a bachelor's degree		
+owl:Class	subclass	ADO:00008	ADO:00009	http://vivoweb.org/ontology/degree/academicDegree71	Master of Arts				MA	Advanced study in the arts		
+owl:Class	subclass	ADO:00008	ADO:00010	http://vivoweb.org/ontology/degree/academicDegree117	Master of Science				MS	Advanced study in science		
+owl:Class	subclass	ADO:00001	ADO:00011		Doctoral Degree					Highest discipline degree		
+owl:Class	subclass	ADO:00010	ADO:00016		Advanced Registered Nurse Practitioner				ARNP	Advanced Registered Nurse Practitioner		
+owl:Class	subclass	ADO:00007	ADO:00017	http://vivoweb.org/ontology/degree/academicDegree2	Aeronautical Engineer				AeEng	Aeronautical Engineer		
+owl:Class	subclass	ADO:00007	ADO:00018	http://vivoweb.org/ontology/degree/academicDegree8	Agricultural Engineering				BAE	Agricultural Engineering		
+owl:Class	subclass	ADO:00007	ADO:00019	http://vivoweb.org/ontology/degree/academicDegree9	Architectural Engineering				BAE	Architectural Engineering		
+owl:Class	subclass	ADO:00003	ADO:00020	http://vivoweb.org/ontology/degree/academicDegree118	Associate Degree Nursing				ADN	Associate Degree Nursing		
+owl:Class	subclass	ADO:00007	ADO:00021	http://vivoweb.org/ontology/degree/academicDegree7	Bachelor of Aeronautical Engineering				BAE	Bachelor of Aeronautical Engineering		
+owl:Class	subclass	ADO:00007	ADO:00022	http://vivoweb.org/ontology/degree/academicDegree10	Bachelor of Agriculture				BAg	Bachelor of Agriculture		
+owl:Class	subclass	ADO:00007	ADO:00023	http://vivoweb.org/ontology/degree/academicDegree11	Bachelor of Applied Mathematics				BAM	Bachelor of Applied Mathematics		
+owl:Class	subclass	ADO:00007	ADO:00024	http://vivoweb.org/ontology/degree/academicDegree124	Bachelor of Applied Science				BAS	Bachelor of Applied Science		
+owl:Class	subclass	ADO:00006	ADO:00025	http://vivoweb.org/ontology/degree/academicDegree12	Bachelor of Architecture				BArch	Bachelor of Architecture		
+owl:Class	subclass	ADO:00006	ADO:00026	http://vivoweb.org/ontology/degree/academicDegree6	Bachelor of Art Education				BAE	Bachelor of Art Education		
+owl:Class	subclass	ADO:00006	ADO:00027	http://vivoweb.org/ontology/degree/academicDegree5	Bachelor of Arts in Education				BAE	Bachelor of Arts in Education		
+owl:Class	subclass	ADO:00006	ADO:00028	http://vivoweb.org/ontology/degree/academicDegree13	Bachelor of Business Administration				BBA	Bachelor of Business Administration		
+owl:Class	subclass	ADO:00006	ADO:00029	http://vivoweb.org/ontology/degree/academicDegree16	Bachelor of Canon Law				BCL	Bachelor of Canon Law		
+owl:Class	subclass	ADO:00007	ADO:00030	http://vivoweb.org/ontology/degree/academicDegree15	Bachelor of Chemical Engineering				BChE	Bachelor of Chemical Engineering		
+owl:Class	subclass	ADO:00007	ADO:00031	http://vivoweb.org/ontology/degree/academicDegree14	Bachelor of Civil Engineering				BCE	Bachelor of Civil Engineering		
+owl:Class	subclass	ADO:00007	ADO:00032		Bachelor of Commerce				BCom	Bachelor of Commerce		
+owl:Class	subclass	ADO:00007	ADO:00033		Bachelor of Dental Surgery				BDS	Bachelor of Dental Surgery		
+owl:Class	subclass	ADO:00006	ADO:00034	http://vivoweb.org/ontology/degree/academicDegree17	Bachelor of Divinity				BD	Bachelor of Divinity		
+owl:Class	subclass	ADO:00006	ADO:00035	http://vivoweb.org/ontology/degree/academicDegree18	Bachelor of Education				BE	Bachelor of Education		
+owl:Class	subclass	ADO:00007	ADO:00036	http://vivoweb.org/ontology/degree/academicDegree20	Bachelor of Electrical Engineering				BEE	Bachelor of Electrical Engineering		
+owl:Class	subclass	ADO:00007	ADO:00037	http://vivoweb.org/ontology/degree/academicDegree19	Bachelor of Engineering				BE	Bachelor of Engineering		
+owl:Class	subclass	ADO:00006	ADO:00038	http://vivoweb.org/ontology/degree/academicDegree22	Bachelor of Fine Arts				BFA	Bachelor of Fine Arts		
+owl:Class	subclass	ADO:00007	ADO:00039	http://vivoweb.org/ontology/degree/academicDegree21	Bachelor of Forestry				BF	Bachelor of Forestry		
+owl:Class	subclass	ADO:00007	ADO:00040		Bachelor of Health Science				BHS	Bachelor of Health Science		
+owl:Class	subclass	ADO:00006	ADO:00041	http://vivoweb.org/ontology/degree/academicDegree23	Bachelor of Journalism				BJ	Bachelor of Journalism		
+owl:Class	subclass	ADO:00006	ADO:00042	http://vivoweb.org/ontology/degree/academicDegree68	Bachelor of Laws				LLB	Bachelor of Laws		
+owl:Class	subclass	ADO:00006	ADO:00043	http://vivoweb.org/ontology/degree/academicDegree66	Bachelor of Letters				LittB	Bachelor of Letters		
+owl:Class	subclass	ADO:00006	ADO:00044	http://vivoweb.org/ontology/degree/academicDegree24	Bachelor of Liberal Studies				BLS	Bachelor of Liberal Studies		
+owl:Class	subclass	ADO:00007	ADO:00045	http://vivoweb.org/ontology/degree/academicDegree25	Bachelor of Library Science				BLS	Bachelor of Library Science		
+owl:Class	subclass	ADO:00006	ADO:00046	http://vivoweb.org/ontology/degree/academicDegree26	Bachelor of Literature				BLit	Bachelor of Literature		
+owl:Class	subclass	ADO:00007	ADO:00047	http://vivoweb.org/ontology/degree/academicDegree29	Bachelor of Marine Science				BMS	Bachelor of Marine Science		
+owl:Class	subclass	ADO:00007	ADO:00048	http://vivoweb.org/ontology/degree/academicDegree27	Bachelor of Medicine				BM	Bachelor of Medicine		
+owl:Class	subclass	ADO:00006	ADO:00049	http://vivoweb.org/ontology/degree/academicDegree28	Bachelor of Music				BM	Bachelor of Music		
+owl:Class	subclass	ADO:00007	ADO:00050	http://vivoweb.org/ontology/degree/academicDegree30	Bachelor of Nursing				BN	Bachelor of Nursing		
+owl:Class	subclass	ADO:00007	ADO:00051	http://vivoweb.org/ontology/degree/academicDegree31	Bachelor of Pharmacy				BPharm	Bachelor of Pharmacy		
+owl:Class	subclass	ADO:00006	ADO:00052	http://vivoweb.org/ontology/degree/academicDegree97	Bachelor of Philosophy				PhB	Bachelor of Philosophy		
+owl:Class	subclass	ADO:00006	ADO:00053	http://vivoweb.org/ontology/degree/academicDegree32	Bachelor of Religious Education				BRE	Bachelor of Religious Education		
+owl:Class	subclass	ADO:00006	ADO:00054	http://vivoweb.org/ontology/degree/academicDegree104	Bachelor of Sacred Theology				STB	Bachelor of Sacred Theology		
+owl:Class	subclass	ADO:00007	ADO:00055		Bachelor of Science in Accounting				BSAc	Bachelor of Science in Accounting		
+owl:Class	subclass	ADO:00007	ADO:00056	http://vivoweb.org/ontology/degree/academicDegree34	Bachelor of Science in Education				BSEd	Bachelor of Science in Education		
+owl:Class	subclass	ADO:00007	ADO:00057		Bachelor of Science in Electrical Engineering				BSEE	Bachelor of Science in Electrical Engineering		
+owl:Class	subclass	ADO:00007	ADO:00058	http://vivoweb.org/ontology/degree/academicDegree120	Bachelor of Science in Engineering				BSE	Bachelor of Science in Engineering		
+owl:Class	subclass	ADO:00007	ADO:00059	http://vivoweb.org/ontology/degree/academicDegree136	Bachelor of Science in Forensic Science				BSFS	Bachelor of Science in Forensic Science		
+owl:Class	subclass	ADO:00007	ADO:00060		Bachelor of Science in Mechanical Engineering				BSME	Bachelor of Science in Mechanical Engineering		
+owl:Class	subclass	ADO:00007	ADO:00061	http://vivoweb.org/ontology/degree/academicDegree130	Bachelor of Science in Nursing				BSN	Bachelor of Science in Nursing		
+owl:Class	subclass	ADO:00007	ADO:00062		Bachelor of Science in Pharmacy				BSP	Bachelor of Science in Pharmacy		
+owl:Class	subclass	ADO:00007	ADO:00063		Bachelor of Surgery				BSurg	Bachelor of Surgery		
+owl:Class	subclass	ADO:00007	ADO:00064		Bachelor of Technology				BTech	Bachelor of Technology		
+owl:Class	subclass	ADO:00006	ADO:00065	http://vivoweb.org/ontology/degree/academicDegree107	Bachelor of Theology				ThB	Bachelor of Theology		
+owl:Class	subclass	ADO:00007	ADO:00066		Bachelor of Veterinary Medicine				BVM	Bachelor of Veterinary Medicine		
+owl:Class	subclass	ADO:00007	ADO:00067	http://vivoweb.org/ontology/degree/academicDegree128	Bachelor of Veterinary Science				BVS	Bachelor of Veterinary Science		
+owl:Class	subclass	ADO:00007	ADO:00068	http://vivoweb.org/ontology/degree/academicDegree36	Chemical Engineer				ChE	Chemical Engineer		
+owl:Class	subclass	ADO:00007	ADO:00069	http://vivoweb.org/ontology/degree/academicDegree35	Civil Engineer				CE	Civil Engineer		
+owl:Class	subclass	ADO:00002	ADO:00070	http://vivoweb.org/ontology/degree/academicDegree116	Diploma of Education				DipEd	Diploma of Education		
+owl:Class	subclass	ADO:00011	ADO:00071	http://vivoweb.org/ontology/degree/academicDegree38	Doctor of Applied Science				DAS	Doctor of Applied Science		
+owl:Class	subclass	ADO:00011	ADO:00072	http://vivoweb.org/ontology/degree/academicDegree37	Doctor of Arts				DA	Doctor of Arts		
+owl:Class	subclass	ADO:00011	ADO:00073	http://vivoweb.org/ontology/degree/academicDegree145	Doctor of Audiology				AuD	Doctor of Audiology		
+owl:Class	subclass	ADO:00011	ADO:00074	http://vivoweb.org/ontology/degree/academicDegree39	Doctor of Business Administration				DBA	Doctor of Business Administration		
+owl:Class	subclass	ADO:00011	ADO:00075	http://vivoweb.org/ontology/degree/academicDegree40	Doctor of Chiropractic				DC	Doctor of Chiropractic		
+owl:Class	subclass	ADO:00011	ADO:00076	http://vivoweb.org/ontology/degree/academicDegree46	Doctor of Dental Medicine				DMD	Doctor of Dental Medicine		
+owl:Class	subclass	ADO:00011	ADO:00077	http://vivoweb.org/ontology/degree/academicDegree43	Doctor of Dental Science				DDS	Doctor of Dental Science		
+owl:Class	subclass	ADO:00011	ADO:00078	http://vivoweb.org/ontology/degree/academicDegree42	Doctor of Dental Surgery	Cirujano Dentista			DDS	Doctor of Dental Surgery		
+owl:Class	subclass	ADO:00011	ADO:00079	http://vivoweb.org/ontology/degree/academicDegree41	Doctor of Divinity				DD	Doctor of Divinity		
+owl:Class	subclass	ADO:00011	ADO:00080	http://vivoweb.org/ontology/degree/academicDegree56	Doctor of Education				EdD	Doctor of Education		
+owl:Class	subclass	ADO:00011	ADO:00081		Doctor of Health and Safety				HSD	Doctor of Health and Safety		
+owl:Class	subclass	ADO:00011	ADO:00082	http://vivoweb.org/ontology/degree/academicDegree146	Doctor of Health Education				DHEd	Doctor of Health Education		
+owl:Class	subclass	ADO:00011	ADO:00083		Doctor of Health Science				DHSc	Doctor of Health Science		
+owl:Class	subclass	ADO:00011	ADO:00084	http://vivoweb.org/ontology/degree/academicDegree65	Doctor of Humane Letters				LHD	Doctor of Humane Letters		
+owl:Class	subclass	ADO:00011	ADO:00085	http://vivoweb.org/ontology/degree/academicDegree101	Doctor of Juridical Science				SJD	Doctor of Juridical Science		
+owl:Class	subclass	ADO:00011	ADO:00086	http://vivoweb.org/ontology/degree/academicDegree64	Doctor of Juristic Science				JSD	Doctor of Juristic Science		
+owl:Class	subclass	ADO:00011	ADO:00087	http://vivoweb.org/ontology/degree/academicDegree69	Doctor of Laws				LLD	Doctor of Laws		
+owl:Class	subclass	ADO:00011	ADO:00088	http://vivoweb.org/ontology/degree/academicDegree45	Doctor of Library Science				DLS	Doctor of Library Science		
+owl:Class	subclass	ADO:00011	ADO:00089	http://vivoweb.org/ontology/degree/academicDegree48	Doctor of Medical Science				DMS	Doctor of Medical Science		
+owl:Class	subclass	ADO:00011	ADO:00013	http://vivoweb.org/ontology/degree/academicDegree77	Doctor of Medicine				MD	Degree required to practice medicine		
+owl:Class	subclass	ADO:00011	ADO:00090		Doctor of Musical Art				DMA	Doctor of Musical Arts		
+owl:Class	subclass	ADO:00011	ADO:00091		Doctor of Naturopathic Medicine				ND	Doctor of Naturopathic Medicine		
+owl:Class	subclass	ADO:00011	ADO:00092		Doctor of Nursing Practice				DNP	Doctor of Nursing Practice		
+owl:Class	subclass	ADO:00011	ADO:00093	http://vivoweb.org/ontology/degree/academicDegree95	Doctor of Optometry				OD	Doctor of Optometry		
+owl:Class	subclass	ADO:00011	ADO:00094	http://vivoweb.org/ontology/degree/academicDegree47	Doctor of Osteopathic Medicine				DO	Doctor of Osteopathic Medicine		
+owl:Class	subclass	ADO:00011	ADO:00095	http://vivoweb.org/ontology/degree/academicDegree96	Doctor of Pharmacy				PharmD	Doctor of Pharmacy		
+owl:Class	subclass	ADO:00011	ADO:00012	http://vivoweb.org/ontology/degree/academicDegree98	Doctor of Philosophy				PhD	"A doctorate in any discipline except medicine, or sometimes theology."		
+owl:Class	subclass	ADO:00011	ADO:00096	http://vivoweb.org/ontology/degree/academicDegree139	Doctor of Podiatric Medicine				DPM	Doctor of Podiatric Medicine		
+owl:Class	subclass	ADO:00011	ADO:00097		Doctor of Psychiatry				PsyD	Doctor of Psychiatry		
+owl:Class	subclass	ADO:00011	ADO:00098	http://vivoweb.org/ontology/degree/academicDegree119	Doctor of Psychology				PsyD	Doctor of Psychology		
+owl:Class	subclass	ADO:00011	ADO:00099	http://vivoweb.org/ontology/degree/academicDegree49	Doctor of Public Administration				DPA	Doctor of Public Administration		
+owl:Class	subclass	ADO:00011	ADO:00100	http://vivoweb.org/ontology/degree/academicDegree50	Doctor of Public Health				DPH	Doctor of Public Health		
+owl:Class	subclass	ADO:00011	ADO:00101	http://vivoweb.org/ontology/degree/academicDegree51	Doctor of Religious Education				DRE	Doctor of Religious Education		
+owl:Class	subclass	ADO:00011	ADO:00102	http://vivoweb.org/ontology/degree/academicDegree105	Doctor of Sacred Theology				STD	Doctor of Sacred Theology		
+owl:Class	subclass	ADO:00011	ADO:00103	http://vivoweb.org/ontology/degree/academicDegree54	Doctor of Science				DSc	Doctor of Science		
+owl:Class	subclass	ADO:00011	ADO:00104		Doctor of Science in Nursing				DSN	Doctor of Science in Nursing		
+owl:Class	subclass	ADO:00011	ADO:00105	http://vivoweb.org/ontology/degree/academicDegree103	Doctor of Social Science				SScD	Doctor of Social Science		
+owl:Class	subclass	ADO:00011	ADO:00106	http://vivoweb.org/ontology/degree/academicDegree52	Doctor of Social Welfare				DSW	Doctor of Social Welfare		
+owl:Class	subclass	ADO:00011	ADO:00107	http://vivoweb.org/ontology/degree/academicDegree53	Doctor of Social Work				DSW	Doctor of Social Work		
+owl:Class	subclass	ADO:00011	ADO:00108	http://vivoweb.org/ontology/degree/academicDegree102	Doctor of the Science of Law				SJD	Doctor of the Science of Law		
+owl:Class	subclass	ADO:00011	ADO:00015	http://vivoweb.org/ontology/degree/academicDegree108	Doctor of Theology				ThD	Highest degree in theology		
+owl:Class	subclass	ADO:00011	ADO:00109	http://vivoweb.org/ontology/degree/academicDegree55	Doctor of Veterinary Medicine				DVM	Doctor of Veterinary Medicine		
+owl:Class	subclass	ADO:00011	ADO:00110		Doctorate in Audiology				AuD	Doctorate in Audiology		
+owl:Class	subclass	ADO:00006	ADO:00111	http://vivoweb.org/ontology/degree/academicDegree57	Education Specialist				EdS	Education Specialist		
+owl:Class	subclass	ADO:00007	ADO:00112	http://vivoweb.org/ontology/degree/academicDegree58	Electrical Engineer				EE	Electrical Engineer		
+owl:Class	subclass	ADO:00007	ADO:00113	http://vivoweb.org/ontology/degree/academicDegree60	Engineer of Metallurgy				EMet	Engineer of Metallurgy		
+owl:Class	subclass	ADO:00007	ADO:00114	http://vivoweb.org/ontology/degree/academicDegree59	Engineer of Mines				EM	Engineer of Mines		
+owl:Class	subclass	ADO:00007	ADO:00116	http://vivoweb.org/ontology/degree/academicDegree62	Industrial Engineering				IE	Industrial Engineering		
+owl:Class	subclass	ADO:00011	ADO:00014	http://vivoweb.org/ontology/degree/academicDegree63	Juris Doctor				JD	Degree required to practice law		
+owl:Class	subclass	ADO:00010	ADO:00117		Master of Accounting				MAcc	Master of Accounting		
+owl:Class	subclass	ADO:00010	ADO:00118	http://vivoweb.org/ontology/degree/academicDegree72	Master of Aeronautical Engineering				MAeroE	Master of Aeronautical Engineering		
+owl:Class	subclass	ADO:00010	ADO:00119		Master of Agribusiness				MAB	Master of Agribusiness		
+owl:Class	subclass	ADO:00010	ADO:00120		Master of Agriculture				MAgr	Master of Agriculture		
+owl:Class	subclass	ADO:00009	ADO:00121	http://vivoweb.org/ontology/degree/academicDegree3	Master of Arts in Teaching				AMT	Master of Arts in Teaching		
+owl:Class	subclass	ADO:00009	ADO:00122	http://vivoweb.org/ontology/degree/academicDegree73	Master of Business Administration				MBA	Master of Business Administration		
+owl:Class	subclass	ADO:00010	ADO:00123	http://vivoweb.org/ontology/degree/academicDegree141	Master of Business Engineering				MBE	Master of Business Engineering		
+owl:Class	subclass	ADO:00010	ADO:00124	http://vivoweb.org/ontology/degree/academicDegree140	Master of Chemical Engineering				MChE	Master of Chemical Engineering		
+owl:Class	subclass	ADO:00009	ADO:00125	http://vivoweb.org/ontology/degree/academicDegree74	Master of Christian Education				MCE	Master of Christian Education		
+owl:Class	subclass	ADO:00010	ADO:00126	http://vivoweb.org/ontology/degree/academicDegree75	Master of Civil Engineering				MCE	Master of Civil Engineering		
+owl:Class	subclass	ADO:00010	ADO:00127	http://vivoweb.org/ontology/degree/academicDegree76	Master of Computer Science				MCS	Master of Computer Science		
+owl:Class	subclass	ADO:00009	ADO:00128	http://vivoweb.org/ontology/degree/academicDegree78	Master of Divinity				MDiv	Master of Divinity		
+owl:Class	subclass	ADO:00009	ADO:00129	http://vivoweb.org/ontology/degree/academicDegree80	Master of Education				MEd	Master of Education		
+owl:Class	subclass	ADO:00010	ADO:00130	http://vivoweb.org/ontology/degree/academicDegree81	Master of Engineering				MEng	Master of Engineering		
+owl:Class	subclass	ADO:00010	ADO:00131		Master of Exercise and Sport Science				MESS	Master of Exercise and Sport Science		
+owl:Class	subclass	ADO:00009	ADO:00132	http://vivoweb.org/ontology/degree/academicDegree82	Master of Fine Arts				MFA	Master of Fine Arts		
+owl:Class	subclass	ADO:00010	ADO:00133	http://vivoweb.org/ontology/degree/academicDegree122	Master of Health Science				MHS	Master of Health Science		
+owl:Class	subclass	ADO:00009	ADO:00134	http://vivoweb.org/ontology/degree/academicDegree83	Master of Hospital Administration				MHA	Master of Hospital Administration		
+owl:Class	subclass	ADO:00009	ADO:00135	http://vivoweb.org/ontology/degree/academicDegree137	Master of International Affairs				MIA	Master of International Affairs		
+owl:Class	subclass	ADO:00009	ADO:00136	http://vivoweb.org/ontology/degree/academicDegree70	Master of Laws				LLM	Master of Laws		
+owl:Class	subclass	ADO:00009	ADO:00137	http://vivoweb.org/ontology/degree/academicDegree67	Master of Letters				LittM	Master of Letters		
+owl:Class	subclass	ADO:00010	ADO:00138	http://vivoweb.org/ontology/degree/academicDegree115	Master of Library and Information Science				MLIS	Master of Library and Information Science		
+owl:Class	subclass	ADO:00010	ADO:00139	http://vivoweb.org/ontology/degree/academicDegree84	Master of Library Science				MLS	Master of Library Science		
+owl:Class	subclass	ADO:00009	ADO:00140	http://vivoweb.org/ontology/degree/academicDegree126	Master of Management Studies				MMS	Master of Management Studies		
+owl:Class	subclass	ADO:00010	ADO:00141	http://vivoweb.org/ontology/degree/academicDegree86	Master of Mechanical Engineering				MME	Master of Mechanical Engineering		
+owl:Class	subclass	ADO:00010	ADO:00142	http://vivoweb.org/ontology/degree/academicDegree150	Master of Medical Science				MMSc	Master of Medical Science		
+owl:Class	subclass	ADO:00010	ADO:00143	http://vivoweb.org/ontology/degree/academicDegree131	Master of Medicine				MMed	Master of Medicine		
+owl:Class	subclass	ADO:00009	ADO:00144	http://vivoweb.org/ontology/degree/academicDegree85	Master of Music				MM	Master of Music		
+owl:Class	subclass	ADO:00009	ADO:00145	http://vivoweb.org/ontology/degree/academicDegree87	Master of Music Education				MME	Master of Music Education		
+owl:Class	subclass	ADO:00010	ADO:00146	http://vivoweb.org/ontology/degree/academicDegree89	Master of Nursing				MN	Master of Nursing		
+owl:Class	subclass	ADO:00010	ADO:00147	http://vivoweb.org/ontology/degree/academicDegree143	Master of Pharmacy				PharmM	Master of Pharmacy		
+owl:Class	subclass	ADO:00009	ADO:00148	http://vivoweb.org/ontology/degree/academicDegree111	Master of Philosophy				MPhil	Master of Philosophy		
+owl:Class	subclass	ADO:00010	ADO:00149		Master of Physical Therapy				MPT	Master of Physical Therapy		
+owl:Class	subclass	ADO:00010	ADO:00150	http://vivoweb.org/ontology/degree/academicDegree147	Master of Physician Assistant Studies				MPAS	Master of Physician Assistant Studies		
+owl:Class	subclass	ADO:00010	ADO:00151		Master of Preventive Veterinary Medicine				MPVM	Master of Preventive Veterinary Medicine		
+owl:Class	subclass	ADO:00010	ADO:00152	http://vivoweb.org/ontology/degree/academicDegree113	Master of Public Health				MPH	Master of Public Health		
+owl:Class	subclass	ADO:00010	ADO:00153	http://vivoweb.org/ontology/degree/academicDegree90	Master of Religious Education				MRE	Master of Religious Education		
+owl:Class	subclass	ADO:00009	ADO:00154		Master of Sacred Music				MSM	Master of Sacred Music		
+owl:Class	subclass	ADO:00009	ADO:00155	http://vivoweb.org/ontology/degree/academicDegree106	Master of Sacred Theology				STM	Master of Sacred Theology		
+owl:Class	subclass	ADO:00010	ADO:00156		Master of Science in Electrical Engineering				MSEE	Master of Science in Electrical Engineering		
+owl:Class	subclass	ADO:00010	ADO:00157	http://vivoweb.org/ontology/degree/academicDegree134	Master of Science in Engineering				MSE	Master of Science in Engineering		
+owl:Class	subclass	ADO:00010	ADO:00158		Master of Science in Information Studies				MSIS	Master of Science in Information Studies		
+owl:Class	subclass	ADO:00010	ADO:00159		Master of Science in Nursing				MSN	Master of Science in Nursing		
+owl:Class	subclass	ADO:00010	ADO:00160	http://vivoweb.org/ontology/degree/academicDegree114	Master of Science in Public Health				MSPH	Master of Science in Public Health		
+owl:Class	subclass	ADO:00009	ADO:00161	http://vivoweb.org/ontology/degree/academicDegree92	Master of Social Work				MSW	Master of Social Work		
+owl:Class	subclass	ADO:00010	ADO:00162		Master of Specialized Veterinary Medicine				MSpVM	Master of Specialized Veterinary Medicine		
+owl:Class	subclass	ADO:00010	ADO:00163		Master of Statistics				MStat	Master of Statistics		
+owl:Class	subclass	ADO:00009	ADO:00164		Master of Studies in International Human Rights Law				MStIHRL	Master of Studies in International Human Rights Law		
+owl:Class	subclass	ADO:00010	ADO:00165		Master of Technology				MTech	Master of Technology		
+owl:Class	subclass	ADO:00009	ADO:00166		Master of Theological Studies				MTS	Master of Theological Studies		
+owl:Class	subclass	ADO:00009	ADO:00167	http://vivoweb.org/ontology/degree/academicDegree93	Master of Theology				MTh	Master of Theology		
+owl:Class	subclass	ADO:00010	ADO:00168		Master of Urban Planning				MUP	Master of Urban Planning		
+owl:Class	subclass	ADO:00010	ADO:00169	http://vivoweb.org/ontology/degree/academicDegree129	Master of Veterinary Science				MVSc	Master of Veterinary Science		
+owl:Class	subclass	ADO:00010	ADO:00170		Medical Masters in Family Medicine				MPrax	Medical Masters in Family Medicine		
+owl:Class	subclass	ADO:00007	ADO:00171	http://vivoweb.org/ontology/degree/academicDegree94	Nuclear Engineer				NucE	Nuclear Engineer		
+owl:Class	subclass	ADO:00010	ADO:00172		Pediatric Nurse Practioner				PNP	Pediatric Nurse Practioner		
+owl:Class	subclass	ADO:00010	ADO:00115		Habilitation		Habilitation ˆ diriger des recherches		HDR	Habilitation ˆ diriger des recherches	Needs a new parent	

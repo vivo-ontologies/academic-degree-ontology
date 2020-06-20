@@ -1,0 +1,216 @@
+Level	Rule Name	Subject	Property	Value
+ERROR	missing_label	oboInOwl:Subset	rdfs:label		
+ERROR	deprecated_class_reference	IAO:0000230	rdfs:label	other@en	
+ERROR	deprecated_class_reference	IAO:0000230	owl:deprecated	true^^http://www.w3.org/2001/XMLSchema#boolean	
+ERROR	multiple_definitions	BFO:0000031	IAO:0000115	A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.@en	
+ERROR	multiple_definitions	BFO:0000031	IAO:0000115	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en	
+ERROR	multiple_labels	ADO:00078	rdfs:label	Cirujano Dentista@es	
+ERROR	multiple_labels	ADO:00078	rdfs:label	Doctor of Dental Surgery@en	
+ERROR	multiple_labels	ADO:00115	rdfs:label	Habilitation@en	
+ERROR	multiple_labels	ADO:00115	rdfs:label	Habilitation � diriger des recherches@fr	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 	
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 	
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 	
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 	
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 	
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 	
+WARN	annotation_whitespace	BFO:0000020	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 	
+WARN	annotation_whitespace	BFO:0000031	IAO:0000602	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 	
+WARN	missing_definition	ADO:00001	IAO:0000600		
+WARN	missing_definition	ADO:00002	IAO:0000600		
+WARN	missing_definition	ADO:00003	IAO:0000600		
+WARN	missing_definition	ADO:00004	IAO:0000600		
+WARN	missing_definition	ADO:00005	IAO:0000600		
+WARN	missing_definition	ADO:00006	IAO:0000600		
+WARN	missing_definition	ADO:00007	IAO:0000600		
+WARN	missing_definition	ADO:00008	IAO:0000600		
+WARN	missing_definition	ADO:00009	IAO:0000600		
+WARN	missing_definition	ADO:00010	IAO:0000600		
+WARN	missing_definition	ADO:00011	IAO:0000600		
+WARN	missing_definition	ADO:00012	IAO:0000600		
+WARN	missing_definition	ADO:00013	IAO:0000600		
+WARN	missing_definition	ADO:00014	IAO:0000600		
+WARN	missing_definition	ADO:00015	IAO:0000600		
+WARN	missing_definition	ADO:00016	IAO:0000600		
+WARN	missing_definition	ADO:00017	IAO:0000600		
+WARN	missing_definition	ADO:00018	IAO:0000600		
+WARN	missing_definition	ADO:00019	IAO:0000600		
+WARN	missing_definition	ADO:00020	IAO:0000600		
+WARN	missing_definition	ADO:00021	IAO:0000600		
+WARN	missing_definition	ADO:00022	IAO:0000600		
+WARN	missing_definition	ADO:00023	IAO:0000600		
+WARN	missing_definition	ADO:00024	IAO:0000600		
+WARN	missing_definition	ADO:00025	IAO:0000600		
+WARN	missing_definition	ADO:00026	IAO:0000600		
+WARN	missing_definition	ADO:00027	IAO:0000600		
+WARN	missing_definition	ADO:00028	IAO:0000600		
+WARN	missing_definition	ADO:00029	IAO:0000600		
+WARN	missing_definition	ADO:00030	IAO:0000600		
+WARN	missing_definition	ADO:00031	IAO:0000600		
+WARN	missing_definition	ADO:00032	IAO:0000600		
+WARN	missing_definition	ADO:00033	IAO:0000600		
+WARN	missing_definition	ADO:00034	IAO:0000600		
+WARN	missing_definition	ADO:00035	IAO:0000600		
+WARN	missing_definition	ADO:00036	IAO:0000600		
+WARN	missing_definition	ADO:00037	IAO:0000600		
+WARN	missing_definition	ADO:00038	IAO:0000600		
+WARN	missing_definition	ADO:00039	IAO:0000600		
+WARN	missing_definition	ADO:00040	IAO:0000600		
+WARN	missing_definition	ADO:00041	IAO:0000600		
+WARN	missing_definition	ADO:00042	IAO:0000600		
+WARN	missing_definition	ADO:00043	IAO:0000600		
+WARN	missing_definition	ADO:00044	IAO:0000600		
+WARN	missing_definition	ADO:00045	IAO:0000600		
+WARN	missing_definition	ADO:00046	IAO:0000600		
+WARN	missing_definition	ADO:00047	IAO:0000600		
+WARN	missing_definition	ADO:00048	IAO:0000600		
+WARN	missing_definition	ADO:00049	IAO:0000600		
+WARN	missing_definition	ADO:00050	IAO:0000600		
+WARN	missing_definition	ADO:00051	IAO:0000600		
+WARN	missing_definition	ADO:00052	IAO:0000600		
+WARN	missing_definition	ADO:00053	IAO:0000600		
+WARN	missing_definition	ADO:00054	IAO:0000600		
+WARN	missing_definition	ADO:00055	IAO:0000600		
+WARN	missing_definition	ADO:00056	IAO:0000600		
+WARN	missing_definition	ADO:00057	IAO:0000600		
+WARN	missing_definition	ADO:00058	IAO:0000600		
+WARN	missing_definition	ADO:00059	IAO:0000600		
+WARN	missing_definition	ADO:00060	IAO:0000600		
+WARN	missing_definition	ADO:00061	IAO:0000600		
+WARN	missing_definition	ADO:00062	IAO:0000600		
+WARN	missing_definition	ADO:00063	IAO:0000600		
+WARN	missing_definition	ADO:00064	IAO:0000600		
+WARN	missing_definition	ADO:00065	IAO:0000600		
+WARN	missing_definition	ADO:00066	IAO:0000600		
+WARN	missing_definition	ADO:00067	IAO:0000600		
+WARN	missing_definition	ADO:00068	IAO:0000600		
+WARN	missing_definition	ADO:00069	IAO:0000600		
+WARN	missing_definition	ADO:00070	IAO:0000600		
+WARN	missing_definition	ADO:00071	IAO:0000600		
+WARN	missing_definition	ADO:00072	IAO:0000600		
+WARN	missing_definition	ADO:00073	IAO:0000600		
+WARN	missing_definition	ADO:00074	IAO:0000600		
+WARN	missing_definition	ADO:00075	IAO:0000600		
+WARN	missing_definition	ADO:00076	IAO:0000600		
+WARN	missing_definition	ADO:00077	IAO:0000600		
+WARN	missing_definition	ADO:00078	IAO:0000600		
+WARN	missing_definition	ADO:00079	IAO:0000600		
+WARN	missing_definition	ADO:00080	IAO:0000600		
+WARN	missing_definition	ADO:00081	IAO:0000600		
+WARN	missing_definition	ADO:00082	IAO:0000600		
+WARN	missing_definition	ADO:00083	IAO:0000600		
+WARN	missing_definition	ADO:00084	IAO:0000600		
+WARN	missing_definition	ADO:00085	IAO:0000600		
+WARN	missing_definition	ADO:00086	IAO:0000600		
+WARN	missing_definition	ADO:00087	IAO:0000600		
+WARN	missing_definition	ADO:00088	IAO:0000600		
+WARN	missing_definition	ADO:00089	IAO:0000600		
+WARN	missing_definition	ADO:00090	IAO:0000600		
+WARN	missing_definition	ADO:00091	IAO:0000600		
+WARN	missing_definition	ADO:00092	IAO:0000600		
+WARN	missing_definition	ADO:00093	IAO:0000600		
+WARN	missing_definition	ADO:00094	IAO:0000600		
+WARN	missing_definition	ADO:00095	IAO:0000600		
+WARN	missing_definition	ADO:00096	IAO:0000600		
+WARN	missing_definition	ADO:00097	IAO:0000600		
+WARN	missing_definition	ADO:00098	IAO:0000600		
+WARN	missing_definition	ADO:00099	IAO:0000600		
+WARN	missing_definition	ADO:00100	IAO:0000600		
+WARN	missing_definition	ADO:00101	IAO:0000600		
+WARN	missing_definition	ADO:00102	IAO:0000600		
+WARN	missing_definition	ADO:00103	IAO:0000600		
+WARN	missing_definition	ADO:00104	IAO:0000600		
+WARN	missing_definition	ADO:00105	IAO:0000600		
+WARN	missing_definition	ADO:00106	IAO:0000600		
+WARN	missing_definition	ADO:00107	IAO:0000600		
+WARN	missing_definition	ADO:00108	IAO:0000600		
+WARN	missing_definition	ADO:00109	IAO:0000600		
+WARN	missing_definition	ADO:00110	IAO:0000600		
+WARN	missing_definition	ADO:00111	IAO:0000600		
+WARN	missing_definition	ADO:00112	IAO:0000600		
+WARN	missing_definition	ADO:00113	IAO:0000600		
+WARN	missing_definition	ADO:00114	IAO:0000600		
+WARN	missing_definition	ADO:00115	IAO:0000600		
+WARN	missing_definition	ADO:00116	IAO:0000600		
+WARN	missing_definition	ADO:00117	IAO:0000600		
+WARN	missing_definition	ADO:00118	IAO:0000600		
+WARN	missing_definition	ADO:00119	IAO:0000600		
+WARN	missing_definition	ADO:00120	IAO:0000600		
+WARN	missing_definition	ADO:00121	IAO:0000600		
+WARN	missing_definition	ADO:00122	IAO:0000600		
+WARN	missing_definition	ADO:00123	IAO:0000600		
+WARN	missing_definition	ADO:00124	IAO:0000600		
+WARN	missing_definition	ADO:00125	IAO:0000600		
+WARN	missing_definition	ADO:00126	IAO:0000600		
+WARN	missing_definition	ADO:00127	IAO:0000600		
+WARN	missing_definition	ADO:00128	IAO:0000600		
+WARN	missing_definition	ADO:00129	IAO:0000600		
+WARN	missing_definition	ADO:00130	IAO:0000600		
+WARN	missing_definition	ADO:00131	IAO:0000600		
+WARN	missing_definition	ADO:00132	IAO:0000600		
+WARN	missing_definition	ADO:00133	IAO:0000600		
+WARN	missing_definition	ADO:00134	IAO:0000600		
+WARN	missing_definition	ADO:00135	IAO:0000600		
+WARN	missing_definition	ADO:00136	IAO:0000600		
+WARN	missing_definition	ADO:00137	IAO:0000600		
+WARN	missing_definition	ADO:00138	IAO:0000600		
+WARN	missing_definition	ADO:00139	IAO:0000600		
+WARN	missing_definition	ADO:00140	IAO:0000600		
+WARN	missing_definition	ADO:00141	IAO:0000600		
+WARN	missing_definition	ADO:00142	IAO:0000600		
+WARN	missing_definition	ADO:00143	IAO:0000600		
+WARN	missing_definition	ADO:00144	IAO:0000600		
+WARN	missing_definition	ADO:00145	IAO:0000600		
+WARN	missing_definition	ADO:00146	IAO:0000600		
+WARN	missing_definition	ADO:00147	IAO:0000600		
+WARN	missing_definition	ADO:00148	IAO:0000600		
+WARN	missing_definition	ADO:00149	IAO:0000600		
+WARN	missing_definition	ADO:00150	IAO:0000600		
+WARN	missing_definition	ADO:00151	IAO:0000600		
+WARN	missing_definition	ADO:00152	IAO:0000600		
+WARN	missing_definition	ADO:00153	IAO:0000600		
+WARN	missing_definition	ADO:00154	IAO:0000600		
+WARN	missing_definition	ADO:00155	IAO:0000600		
+WARN	missing_definition	ADO:00156	IAO:0000600		
+WARN	missing_definition	ADO:00157	IAO:0000600		
+WARN	missing_definition	ADO:00158	IAO:0000600		
+WARN	missing_definition	ADO:00159	IAO:0000600		
+WARN	missing_definition	ADO:00160	IAO:0000600		
+WARN	missing_definition	ADO:00161	IAO:0000600		
+WARN	missing_definition	ADO:00162	IAO:0000600		
+WARN	missing_definition	ADO:00163	IAO:0000600		
+WARN	missing_definition	ADO:00164	IAO:0000600		
+WARN	missing_definition	ADO:00165	IAO:0000600		
+WARN	missing_definition	ADO:00166	IAO:0000600		
+WARN	missing_definition	ADO:00167	IAO:0000600		
+WARN	missing_definition	ADO:00168	IAO:0000600		
+WARN	missing_definition	ADO:00169	IAO:0000600		
+WARN	missing_definition	ADO:00170	IAO:0000600		
+WARN	missing_definition	ADO:00171	IAO:0000600		
+WARN	missing_definition	ADO:00172	IAO:0000600		
+WARN	missing_definition	BFO:0000001	IAO:0000115		
+WARN	missing_definition	BFO:0000016	IAO:0000115		
+WARN	missing_definition	BFO:0000017	IAO:0000115		
+WARN	missing_definition	BFO:0000020	IAO:0000600		
+WARN	missing_definition	BFO:0000031	IAO:0000600		
+WARN	missing_definition	IAO:0000027	IAO:0000600		
+WARN	missing_definition	IAO:0000030	IAO:0000600		
+WARN	missing_definition	IAO:0000078	IAO:0000600		
+WARN	missing_definition	IAO:0000102	IAO:0000600		
+WARN	missing_definition	IAO:0000136	IAO:0000600		
+WARN	missing_definition	IAO:0000225	IAO:0000600		
+WARN	missing_definition	IAO:0000310	IAO:0000600		
+WARN	missing_definition	IAO:0000409	IAO:0000600		
+WARN	missing_definition	oboInOwl:Subset	IAO:0000115		
+WARN	missing_definition	oboInOwl:Subset	IAO:0000600		
+WARN	missing_obsolete_label	IAO:0000230	rdfs:label	other@en	
+INFO	lowercase_definition	BFO:0000016	IAO:0000600	b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en	
+INFO	lowercase_definition	BFO:0000020	IAO:0000115	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en	
+INFO	lowercase_definition	BFO:0000031	IAO:0000115	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en	
+INFO	lowercase_definition	IAO:0000027	IAO:0000115	a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.@en	
+INFO	lowercase_definition	IAO:0000102	IAO:0000115	data about an ontology part is a data item about a part of an ontology, for example a term@en	
+INFO	lowercase_definition	IAO:0000121	IAO:0000115	term created to ease viewing/sort terms for development purpose, and will not be included in a release@en	
+INFO	lowercase_definition	IAO:0000136	IAO:0000115	is_about is a (currently) primitive relation that relates an information artifact to an entity.@en	
+INFO	missing_superclass	BFO:0000001	rdfs:subClassOf		

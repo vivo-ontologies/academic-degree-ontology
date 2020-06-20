@@ -1,0 +1,1352 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000116> rdf:type owl:AnnotationProperty .
+
+
+<http://purl.obolibrary.org/obo/IAO_0000605> rdf:type owl:AnnotationProperty .
+
+
+rdf:type rdf:type owl:AnnotationProperty .
+
+
+
+<http://purl.obolibrary.org/obo/ADO_00001> rdf:type owl:Class .
+
+
+<http://purl.obolibrary.org/obo/ADO_00002> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00001> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Two years of study"@en ;
+                                           rdfs:label "Associates Degree"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00003> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00002> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Two years focused on science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "AS"^^xsd:string ;
+                                           rdfs:label "Associate of Science Degree"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree127> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00004> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00002> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Two years focused on the arts"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "AA"^^xsd:string ;
+                                           rdfs:label "Associate of Arts Degree"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree132> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00005> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00001> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Four years of study"@en ;
+                                           rdfs:label "Bachelors Degree"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00006> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00005> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Four years focused on the arts"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BA"^^xsd:string ;
+                                           rdfs:label "Bachelor of Arts Degree"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree4> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00007> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00005> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Four years focused on science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science Degree"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree33> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00008> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00001> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Advanced study following a bachelor's degree"@en ;
+                                           rdfs:label "Masters Degree"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00009> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00008> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Advanced study in the arts"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MA"^^xsd:string ;
+                                           rdfs:label "Master of Arts"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree71> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00010> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00008> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Advanced study in science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MS"^^xsd:string ;
+                                           rdfs:label "Master of Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree117> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00011> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00001> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Highest discipline degree"@en ;
+                                           rdfs:label "Doctoral Degree"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00012> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "A doctorate in any discipline except medicine, or sometimes theology."@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "PhD"^^xsd:string ;
+                                           rdfs:label "Doctor of Philosophy"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree98> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00013> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Degree required to practice medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MD"^^xsd:string ;
+                                           rdfs:label "Doctor of Medicine"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree77> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00014> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Degree required to practice law"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "JD"^^xsd:string ;
+                                           rdfs:label "Juris Doctor"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree63> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00015> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Highest degree in theology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "ThD"^^xsd:string ;
+                                           rdfs:label "Doctor of Theology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree108> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00016> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Advanced Registered Nurse Practitioner"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "ARNP"^^xsd:string ;
+                                           rdfs:label "Advanced Registered Nurse Practitioner"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00017> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Aeronautical Engineer"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "AeEng"^^xsd:string ;
+                                           rdfs:label "Aeronautical Engineer"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree2> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00018> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Agricultural Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAE"^^xsd:string ;
+                                           rdfs:label "Agricultural Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree8> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00019> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Architectural Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAE"^^xsd:string ;
+                                           rdfs:label "Architectural Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree9> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00020> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00003> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Associate Degree Nursing"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "ADN"^^xsd:string ;
+                                           rdfs:label "Associate Degree Nursing"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree118> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00021> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Aeronautical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Aeronautical Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree7> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00022> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Agriculture"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAg"^^xsd:string ;
+                                           rdfs:label "Bachelor of Agriculture"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree10> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00023> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Applied Mathematics"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAM"^^xsd:string ;
+                                           rdfs:label "Bachelor of Applied Mathematics"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree11> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00024> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Applied Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Applied Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree124> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00025> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Architecture"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BArch"^^xsd:string ;
+                                           rdfs:label "Bachelor of Architecture"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree12> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00026> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Art Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Art Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree6> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00027> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Arts in Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BAE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Arts in Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree5> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00028> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Business Administration"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BBA"^^xsd:string ;
+                                           rdfs:label "Bachelor of Business Administration"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree13> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00029> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Canon Law"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BCL"^^xsd:string ;
+                                           rdfs:label "Bachelor of Canon Law"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree16> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00030> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Chemical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BChE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Chemical Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree15> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00031> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Civil Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BCE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Civil Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree14> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00032> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Commerce"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BCom"^^xsd:string ;
+                                           rdfs:label "Bachelor of Commerce"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00033> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Dental Surgery"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BDS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Dental Surgery"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00034> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Divinity"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BD"^^xsd:string ;
+                                           rdfs:label "Bachelor of Divinity"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree17> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00035> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree18> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00036> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Electrical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BEE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Electrical Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree20> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00037> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree19> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00038> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Fine Arts"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BFA"^^xsd:string ;
+                                           rdfs:label "Bachelor of Fine Arts"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree22> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00039> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Forestry"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BF"^^xsd:string ;
+                                           rdfs:label "Bachelor of Forestry"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree21> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00040> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Health Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BHS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Health Science"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00041> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Journalism"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BJ"^^xsd:string ;
+                                           rdfs:label "Bachelor of Journalism"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree23> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00042> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Laws"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "LLB"^^xsd:string ;
+                                           rdfs:label "Bachelor of Laws"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree68> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00043> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Letters"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "LittB"^^xsd:string ;
+                                           rdfs:label "Bachelor of Letters"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree66> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00044> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Liberal Studies"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BLS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Liberal Studies"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree24> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00045> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Library Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BLS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Library Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree25> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00046> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Literature"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BLit"^^xsd:string ;
+                                           rdfs:label "Bachelor of Literature"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree26> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00047> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Marine Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BMS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Marine Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree29> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00048> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BM"^^xsd:string ;
+                                           rdfs:label "Bachelor of Medicine"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree27> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00049> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Music"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BM"^^xsd:string ;
+                                           rdfs:label "Bachelor of Music"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree28> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00050> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Nursing"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BN"^^xsd:string ;
+                                           rdfs:label "Bachelor of Nursing"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree30> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00051> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Pharmacy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BPharm"^^xsd:string ;
+                                           rdfs:label "Bachelor of Pharmacy"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree31> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00052> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Philosophy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "PhB"^^xsd:string ;
+                                           rdfs:label "Bachelor of Philosophy"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree97> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00053> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Religious Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BRE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Religious Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree32> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00054> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Sacred Theology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "STB"^^xsd:string ;
+                                           rdfs:label "Bachelor of Sacred Theology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree104> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00055> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Accounting"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSAc"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Accounting"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00056> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSEd"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree34> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00057> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Electrical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSEE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Electrical Engineering"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00058> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSE"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree120> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00059> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Forensic Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSFS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Forensic Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree136> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00060> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Mechanical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSME"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Mechanical Engineering"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00061> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Nursing"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSN"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Nursing"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree130> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00062> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Science in Pharmacy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSP"^^xsd:string ;
+                                           rdfs:label "Bachelor of Science in Pharmacy"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00063> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Surgery"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BSurg"^^xsd:string ;
+                                           rdfs:label "Bachelor of Surgery"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00064> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Technology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BTech"^^xsd:string ;
+                                           rdfs:label "Bachelor of Technology"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00065> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Theology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "ThB"^^xsd:string ;
+                                           rdfs:label "Bachelor of Theology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree107> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00066> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Veterinary Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BVM"^^xsd:string ;
+                                           rdfs:label "Bachelor of Veterinary Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00067> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Bachelor of Veterinary Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "BVS"^^xsd:string ;
+                                           rdfs:label "Bachelor of Veterinary Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree128> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00068> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Chemical Engineer"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "ChE"^^xsd:string ;
+                                           rdfs:label "Chemical Engineer"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree36> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00069> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Civil Engineer"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "CE"^^xsd:string ;
+                                           rdfs:label "Civil Engineer"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree35> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00070> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00002> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Diploma of Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DipEd"^^xsd:string ;
+                                           rdfs:label "Diploma of Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree116> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00071> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Applied Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DAS"^^xsd:string ;
+                                           rdfs:label "Doctor of Applied Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree38> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00072> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Arts"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DA"^^xsd:string ;
+                                           rdfs:label "Doctor of Arts"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree37> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00073> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Audiology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "AuD"^^xsd:string ;
+                                           rdfs:label "Doctor of Audiology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree145> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00074> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Business Administration"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DBA"^^xsd:string ;
+                                           rdfs:label "Doctor of Business Administration"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree39> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00075> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Chiropractic"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DC"^^xsd:string ;
+                                           rdfs:label "Doctor of Chiropractic"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree40> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00076> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Dental Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DMD"^^xsd:string ;
+                                           rdfs:label "Doctor of Dental Medicine"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree46> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00077> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Dental Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DDS"^^xsd:string ;
+                                           rdfs:label "Doctor of Dental Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree43> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00078> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Dental Surgery"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DDS"^^xsd:string ;
+                                           rdfs:label "Cirujano Dentista"@es ,
+                                                      "Doctor of Dental Surgery"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree42> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00079> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Divinity"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DD"^^xsd:string ;
+                                           rdfs:label "Doctor of Divinity"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree41> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00080> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "EdD"^^xsd:string ;
+                                           rdfs:label "Doctor of Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree56> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00081> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Health and Safety"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "HSD"^^xsd:string ;
+                                           rdfs:label "Doctor of Health and Safety"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00082> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Health Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DHEd"^^xsd:string ;
+                                           rdfs:label "Doctor of Health Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree146> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00083> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Health Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DHSc"^^xsd:string ;
+                                           rdfs:label "Doctor of Health Science"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00084> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Humane Letters"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "LHD"^^xsd:string ;
+                                           rdfs:label "Doctor of Humane Letters"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree65> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00085> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Juridical Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "SJD"^^xsd:string ;
+                                           rdfs:label "Doctor of Juridical Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree101> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00086> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Juristic Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "JSD"^^xsd:string ;
+                                           rdfs:label "Doctor of Juristic Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree64> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00087> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Laws"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "LLD"^^xsd:string ;
+                                           rdfs:label "Doctor of Laws"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree69> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00088> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Library Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DLS"^^xsd:string ;
+                                           rdfs:label "Doctor of Library Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree45> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00089> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Medical Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DMS"^^xsd:string ;
+                                           rdfs:label "Doctor of Medical Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree48> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00090> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Musical Arts"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DMA"^^xsd:string ;
+                                           rdfs:label "Doctor of Musical Art"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00091> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Naturopathic Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "ND"^^xsd:string ;
+                                           rdfs:label "Doctor of Naturopathic Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00092> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Nursing Practice"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DNP"^^xsd:string ;
+                                           rdfs:label "Doctor of Nursing Practice"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00093> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Optometry"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "OD"^^xsd:string ;
+                                           rdfs:label "Doctor of Optometry"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree95> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00094> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Osteopathic Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DO"^^xsd:string ;
+                                           rdfs:label "Doctor of Osteopathic Medicine"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree47> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00095> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Pharmacy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "PharmD"^^xsd:string ;
+                                           rdfs:label "Doctor of Pharmacy"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree96> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00096> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Podiatric Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DPM"^^xsd:string ;
+                                           rdfs:label "Doctor of Podiatric Medicine"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree139> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00097> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Psychiatry"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "PsyD"^^xsd:string ;
+                                           rdfs:label "Doctor of Psychiatry"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00098> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Psychology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "PsyD"^^xsd:string ;
+                                           rdfs:label "Doctor of Psychology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree119> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00099> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Public Administration"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DPA"^^xsd:string ;
+                                           rdfs:label "Doctor of Public Administration"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree49> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00100> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Public Health"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DPH"^^xsd:string ;
+                                           rdfs:label "Doctor of Public Health"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree50> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00101> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Religious Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DRE"^^xsd:string ;
+                                           rdfs:label "Doctor of Religious Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree51> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00102> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Sacred Theology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "STD"^^xsd:string ;
+                                           rdfs:label "Doctor of Sacred Theology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree105> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00103> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DSc"^^xsd:string ;
+                                           rdfs:label "Doctor of Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree54> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00104> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Science in Nursing"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DSN"^^xsd:string ;
+                                           rdfs:label "Doctor of Science in Nursing"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00105> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Social Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "SScD"^^xsd:string ;
+                                           rdfs:label "Doctor of Social Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree103> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00106> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Social Welfare"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DSW"^^xsd:string ;
+                                           rdfs:label "Doctor of Social Welfare"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree52> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00107> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Social Work"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DSW"^^xsd:string ;
+                                           rdfs:label "Doctor of Social Work"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree53> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00108> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of the Science of Law"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "SJD"^^xsd:string ;
+                                           rdfs:label "Doctor of the Science of Law"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree102> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00109> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctor of Veterinary Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "DVM"^^xsd:string ;
+                                           rdfs:label "Doctor of Veterinary Medicine"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree55> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00110> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00011> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Doctorate in Audiology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "AuD"^^xsd:string ;
+                                           rdfs:label "Doctorate in Audiology"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00111> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00006> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Education Specialist"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "EdS"^^xsd:string ;
+                                           rdfs:label "Education Specialist"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree57> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00112> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Electrical Engineer"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "EE"^^xsd:string ;
+                                           rdfs:label "Electrical Engineer"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree58> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00113> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Engineer of Metallurgy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "EMet"^^xsd:string ;
+                                           rdfs:label "Engineer of Metallurgy"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree60> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00114> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Engineer of Mines"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "EM"^^xsd:string ;
+                                           rdfs:label "Engineer of Mines"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree59> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00115> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Habilitation � diriger des recherches"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000116> "Needs a new parent"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "HDR"^^xsd:string ;
+                                           rdfs:label "Habilitation"@en ,
+                                                      "Habilitation � diriger des recherches"@fr .
+
+
+<http://purl.obolibrary.org/obo/ADO_00116> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Industrial Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "IE"^^xsd:string ;
+                                           rdfs:label "Industrial Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree62> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00117> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Accounting"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MAcc"^^xsd:string ;
+                                           rdfs:label "Master of Accounting"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00118> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Aeronautical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MAeroE"^^xsd:string ;
+                                           rdfs:label "Master of Aeronautical Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree72> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00119> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Agribusiness"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MAB"^^xsd:string ;
+                                           rdfs:label "Master of Agribusiness"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00120> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Agriculture"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MAgr"^^xsd:string ;
+                                           rdfs:label "Master of Agriculture"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00121> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Arts in Teaching"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "AMT"^^xsd:string ;
+                                           rdfs:label "Master of Arts in Teaching"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree3> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00122> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Business Administration"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MBA"^^xsd:string ;
+                                           rdfs:label "Master of Business Administration"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree73> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00123> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Business Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MBE"^^xsd:string ;
+                                           rdfs:label "Master of Business Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree141> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00124> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Chemical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MChE"^^xsd:string ;
+                                           rdfs:label "Master of Chemical Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree140> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00125> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Christian Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MCE"^^xsd:string ;
+                                           rdfs:label "Master of Christian Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree74> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00126> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Civil Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MCE"^^xsd:string ;
+                                           rdfs:label "Master of Civil Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree75> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00127> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Computer Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MCS"^^xsd:string ;
+                                           rdfs:label "Master of Computer Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree76> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00128> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Divinity"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MDiv"^^xsd:string ;
+                                           rdfs:label "Master of Divinity"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree78> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00129> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MEd"^^xsd:string ;
+                                           rdfs:label "Master of Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree80> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00130> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MEng"^^xsd:string ;
+                                           rdfs:label "Master of Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree81> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00131> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Exercise and Sport Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MESS"^^xsd:string ;
+                                           rdfs:label "Master of Exercise and Sport Science"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00132> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Fine Arts"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MFA"^^xsd:string ;
+                                           rdfs:label "Master of Fine Arts"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree82> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00133> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Health Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MHS"^^xsd:string ;
+                                           rdfs:label "Master of Health Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree122> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00134> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Hospital Administration"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MHA"^^xsd:string ;
+                                           rdfs:label "Master of Hospital Administration"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree83> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00135> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of International Affairs"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MIA"^^xsd:string ;
+                                           rdfs:label "Master of International Affairs"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree137> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00136> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Laws"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "LLM"^^xsd:string ;
+                                           rdfs:label "Master of Laws"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree70> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00137> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Letters"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "LittM"^^xsd:string ;
+                                           rdfs:label "Master of Letters"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree67> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00138> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Library and Information Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MLIS"^^xsd:string ;
+                                           rdfs:label "Master of Library and Information Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree115> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00139> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Library Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MLS"^^xsd:string ;
+                                           rdfs:label "Master of Library Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree84> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00140> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Management Studies"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MMS"^^xsd:string ;
+                                           rdfs:label "Master of Management Studies"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree126> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00141> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Mechanical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MME"^^xsd:string ;
+                                           rdfs:label "Master of Mechanical Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree86> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00142> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Medical Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MMSc"^^xsd:string ;
+                                           rdfs:label "Master of Medical Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree150> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00143> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MMed"^^xsd:string ;
+                                           rdfs:label "Master of Medicine"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree131> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00144> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Music"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MM"^^xsd:string ;
+                                           rdfs:label "Master of Music"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree85> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00145> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Music Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MME"^^xsd:string ;
+                                           rdfs:label "Master of Music Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree87> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00146> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Nursing"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MN"^^xsd:string ;
+                                           rdfs:label "Master of Nursing"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree89> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00147> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Pharmacy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "PharmM"^^xsd:string ;
+                                           rdfs:label "Master of Pharmacy"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree143> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00148> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Philosophy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MPhil"^^xsd:string ;
+                                           rdfs:label "Master of Philosophy"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree111> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00149> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Physical Therapy"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MPT"^^xsd:string ;
+                                           rdfs:label "Master of Physical Therapy"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00150> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Physician Assistant Studies"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MPAS"^^xsd:string ;
+                                           rdfs:label "Master of Physician Assistant Studies"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree147> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00151> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Preventive Veterinary Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MPVM"^^xsd:string ;
+                                           rdfs:label "Master of Preventive Veterinary Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00152> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Public Health"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MPH"^^xsd:string ;
+                                           rdfs:label "Master of Public Health"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree113> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00153> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Religious Education"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MRE"^^xsd:string ;
+                                           rdfs:label "Master of Religious Education"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree90> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00154> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Sacred Music"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSM"^^xsd:string ;
+                                           rdfs:label "Master of Sacred Music"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00155> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Sacred Theology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "STM"^^xsd:string ;
+                                           rdfs:label "Master of Sacred Theology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree106> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00156> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Science in Electrical Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSEE"^^xsd:string ;
+                                           rdfs:label "Master of Science in Electrical Engineering"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00157> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Science in Engineering"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSE"^^xsd:string ;
+                                           rdfs:label "Master of Science in Engineering"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree134> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00158> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Science in Information Studies"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSIS"^^xsd:string ;
+                                           rdfs:label "Master of Science in Information Studies"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00159> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Science in Nursing"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSN"^^xsd:string ;
+                                           rdfs:label "Master of Science in Nursing"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00160> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Science in Public Health"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSPH"^^xsd:string ;
+                                           rdfs:label "Master of Science in Public Health"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree114> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00161> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Social Work"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSW"^^xsd:string ;
+                                           rdfs:label "Master of Social Work"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree92> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00162> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Specialized Veterinary Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MSpVM"^^xsd:string ;
+                                           rdfs:label "Master of Specialized Veterinary Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00163> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Statistics"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MStat"^^xsd:string ;
+                                           rdfs:label "Master of Statistics"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00164> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Studies in International Human Rights Law"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MStIHRL"^^xsd:string ;
+                                           rdfs:label "Master of Studies in International Human Rights Law"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00165> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Technology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MTech"^^xsd:string ;
+                                           rdfs:label "Master of Technology"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00166> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Theological Studies"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MTS"^^xsd:string ;
+                                           rdfs:label "Master of Theological Studies"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00167> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00009> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Theology"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MTh"^^xsd:string ;
+                                           rdfs:label "Master of Theology"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree93> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00168> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Urban Planning"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MUP"^^xsd:string ;
+                                           rdfs:label "Master of Urban Planning"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00169> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Master of Veterinary Science"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MVSc"^^xsd:string ;
+                                           rdfs:label "Master of Veterinary Science"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree129> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00170> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Medical Masters in Family Medicine"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "MPrax"^^xsd:string ;
+                                           rdfs:label "Medical Masters in Family Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/ADO_00171> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00007> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Nuclear Engineer"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "NucE"^^xsd:string ;
+                                           rdfs:label "Nuclear Engineer"@en ;
+                                           rdfs:seeAlso <http://vivoweb.org/ontology/degree/academicDegree94> .
+
+
+<http://purl.obolibrary.org/obo/ADO_00172> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://purl.obolibrary.org/obo/ADO_00010> ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000115> "Pediatric Nurse Practioner"@en ;
+                                           <http://purl.obolibrary.org/obo/IAO_0000605> "PNP"^^xsd:string ;
+                                           rdfs:label "Pediatric Nurse Practioner"@en .
+
+
