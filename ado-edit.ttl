@@ -1,28 +1,47 @@
-@prefix : <http://purl.obolibrary.org/obo/ado.owl/> .
+@prefix : <https://github.com/mconlon17/ado#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix iao: <http://purl.obolibrary.org/obo/IAO_> .
-@prefix ado: <http://purl.obolibrary.org/obo/ADO_> .
+@prefix ado: <https://github.com/mconlon17/ado#> .
 @prefix bfo: <http://purl.obolibrary.org/obo/BFO_> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.obolibrary.org/obo/ado.owl/> .
+@prefix person: <http://purl.obolibrary.org/obo/NCBITaxon_9606> .
+@prefix organization: <http://purl.obolibrary.org/obo/OBI_0000245> .
+@base <https://github.com/mconlon17/ado> .
 
-<http://purl.obolibrary.org/obo/ado.owl> rdf:type owl:Ontology ;
-                                          owl:versionIRI <http://purl.obolibrary.org/obo/ado/releases/2020-06-20> ;
-                                          owl:priorVersion <http://vivoweb.org/ontology/core#> ;
-                                          dc:contributor "Michael Conlon"^^xsd:string ;
-                                          dc:description "A BFO-based, OBO compliant ontology of academic degrees of the world.  ADO represents degrees as classes.  People and organizations participate in the conferring of the degree through roles.  The process of granting a degree results in a new role for the recipient, and the degree document, which records the granting of the degree."@en ;
-                                          dc:title "Academic Degree Ontology"@en ;
-                                          rdfs:label "Academic Degree Ontology"@en .
+<https://github.com/mconlon17/ado>	rdf:type owl:Ontology ;
+                                    owl:versionIRI <http://purl.obolibrary.org/obo/ado/releases/2020-06-20> ;
+                                    owl:priorVersion <http://vivoweb.org/ontology/core#> ;
+                                    dc:creator "Michael Conlon"^^xsd:string ;
+                                    dc:description "A BFO-based, OBO compliant ontology of academic degrees of the world.  ADO represents degrees as classes.  People and organizations participate in the conferring of the degree through roles.  The process of granting a degree results in a new role for the recipient, and the degree document, which records the granting of the degree."@en ;
+                                    dc:title "Academic Degree Ontology"@en ;
+                                    owl:versionInfo "version 0.0.1" ;
+                                    rdfs:label "Academic Degree Ontology"@en .
 
 # Classes
 
-iao:0000310 a owl:Class;
+person: a owl:Class;
+    rdfs:label "Person"@en .
+    
+organization: a owl:Class;
+    rdfs:label "Organization"@en .
+    
+iao:0000030 a owl:Class;
+    rdfs:label "information content entity"@en .
+
+iao:0000310 rdfs:subClassOf iao:0000030;
     rdfs:label "Document"@en .
+    
+iao:0021001 rdfs:subClassOf bfo:0000015;
+    rdfs:label "deontic document act"@en .
+    
+iao:0000578 rdfs:subClassOf iao:0000030;
+    rdfs:label "centrally registered identifier"@en .
 
 bfo:0000035 a owl:Class;
     rdfs:label "Process Boundary"@en .
@@ -32,28 +51,27 @@ bfo:0000015 a owl:Class;
     
 bfo:0000023 a owl:Class;
     rdfs:label "Role"@en .
+    
+skos:Concept a owl:Class;
+    rdfs:label "Concept"@en .
 
 ado:00001 rdfs:subClassOf iao:0000310;
-    iao:0000115 "A qualification awarded to students upon successful completion of a course of study in higher education, usually at a college or university"@en;
+    iao:0000115 "A qualification awarded to a student upon successful completion of a course of study in higher education, usually at a college or university"@en;
     iao:0000119 <https://en.wikipedia.org/wiki/Academic_degree> ;
     rdfs:label "Academic Degree"@en .
     
-ado:10001 rdfs:subClassOf bfo:0000015;
+ado:10001 rdfs:subClassOf iao:0021001;
     iao:0000115 "The process by which an academic degree is conferred on an individual.  The individual receiving the degree participates, as well as the organization."@en ;
-    iao:0000116 "This will be replaced by a deontic declaration to create the role, which then exists in perpetuity"@en ;
-    rdfs:label "Degree Granting Process"@en; .
+    iao:0000116 "This is a deontic document act, creating a role, which then exists in perpetuity, and creating the academic degree document"@en ;
+    rdfs:label "Degree Granting Act"@en; .
     
 ado:10002 rdfs:subClassOf bfo:0000035 ;
     iao:0000115 "The instant of the granting of the degree"@en;
     rdfs:label "Date degree granted"@en .
     
-ado:10003 a owl:Class ;
-    iao:0000115 "A legally constituted collection of people"@en;
-    rdfs:label "Organization"@en .
-    
-ado:10004 a owl:Class ;
-    iao:0000115 "A human being"@en;
-    rdfs:label "Person"@en .
+ado:10003 rdfs:subClassOf bfo:0000015 ;
+    iao:0000115 "The process of education of a student following a course of study"@en;
+    rdfs:label "education process"@en .
     
 ado:10005 rdfs:subClassOf bfo:0000023 ;
     iao:0000115 "The role which inheres in a person as an output of a degree granting process"@en;
@@ -63,27 +81,42 @@ ado:10005 rdfs:subClassOf bfo:0000023 ;
 # Object Properties
     
 ado:20001 a owl:ObjectProperty ;
-    rdfs:domain ado:10003 ;
+    rdfs:domain organization: ;
     rdfs:range ado:10001 ;
     rdfs:label "degree granting organization"@en .
     
 ado:20002 a owl:ObjectProperty ;
-    rdfs:domain ado:10004 ;
+    rdfs:domain person: ;
     rdfs:range ado:10001 ;
     rdfs:label "degree recipient"@en .
+    
+ado:20003 a owl:ObjectProperty ;
+    rdfs:domain ado:10001 ;
+    rdfs:range ado:10002 ;
+    rdfs:label "date granted"@en .  
+    
+ado:20004 a owl:ObjectProperty ;
+    rdfs:domain ado:10001 ;
+    rdfs:range ado:10005 ;
+    rdfs:label "creates recipient role"@en .   
+    
+ado:20005 a owl:ObjectProperty ;
+    rdfs:domain ado:10003 ;
+    rdfs:range ado:10001 ;
+    rdfs:label "resulting degree granting act"@en . 
+    
+ado:20006 a owl:ObjectProperty ;
+    rdfs:domain ado:10001 ;
+    rdfs:range ado:00001 ;
+    rdfs:label "has degree output"@en . 
     
 bfo:20001 a owl:ObjectProperty ;
     rdfs:domain bfo:0000015 ;
     rdfs:range bfo:0000035 ;
     rdfs:label "has part"@en .
     
-bfo:20002 a owl:ObjectProperty ;
-    rdfs:domain ado:10001 ;
-    rdfs:range ado:00001 ;
-    rdfs:label "has document output"@en .
-    
 bfo:20007 a owl:ObjectProperty ;
-    rdfs:domain ado:10004 ;
+    rdfs:domain person: ;
     rdfs:range bfo:0000023 ;
     rdfs:label "bearer of"@en .
     
@@ -92,10 +125,15 @@ bfo:20004 a owl:ObjectProperty ;
     rdfs:range bfo:0000015 ;
     rdfs:label "realized in"@en .
     
-bfo:20005 a owl:ObjectProperty ;
-    rdfs:domain ado:10001 ;
-    rdfs:range ado:10005 ;
-    rdfs:label "creates role"@en .
+iao:0000136 a owl:ObjectProperty ;
+    rdfs:domain iao:0000310 ;
+    rdfs:range skos:Concept ;
+    rdfs:label "is about"@en .
+    
+iao:0000235 a owl:ObjectProperty ;
+    rdfs:domain ado:10003 ;
+    rdfs:range iao:0000578 ;
+    rdfs:label "denoted by"@en .
 
 # Datatype Properties
 
@@ -107,7 +145,17 @@ ado:30001 a owl:DatatypeProperty ;
 ado:30002 a owl:DatatypeProperty ;
     rdfs:domain ado:10001 ;
     rdfs:range rdf:langString ;
-    rdfs:label "degree granting process note"@en .    
+    rdfs:label "degree granting act note"@en .    
+    
+ado:30003 a owl:DatatypeProperty ;
+    rdfs:domain organization: ;
+    rdfs:range rdf:langString ;
+    rdfs:label "organization name"@en .  
+    
+ado:30004 a owl:DatatypeProperty ;
+    rdfs:domain skos:Concept ;
+    rdfs:range rdf:langString ;
+    rdfs:label "concept title"@en .
     
 #  Example
 #
