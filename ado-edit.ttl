@@ -26,16 +26,16 @@
 # Classes
 
 person: a owl:Class;
-    rdfs:label "Person"@en .
+    rdfs:label "person"@en .
     
 organization: a owl:Class;
-    rdfs:label "Organization"@en .
+    rdfs:label "organization"@en .
     
 iao:0000030 a owl:Class;
     rdfs:label "information content entity"@en .
 
 iao:0000310 rdfs:subClassOf iao:0000030;
-    rdfs:label "Document"@en .
+    rdfs:label "document"@en .
     
 iao:0021001 rdfs:subClassOf bfo:0000015;
     rdfs:label "deontic document act"@en .
@@ -44,39 +44,44 @@ iao:0000578 rdfs:subClassOf iao:0000030;
     rdfs:label "centrally registered identifier"@en .
 
 bfo:0000035 a owl:Class;
-    rdfs:label "Process Boundary"@en .
+    rdfs:label "process boundary"@en .
     
 bfo:0000015 a owl:Class;
-    rdfs:label "Process"@en .
+    rdfs:label "process"@en .
     
 bfo:0000023 a owl:Class;
-    rdfs:label "Role"@en .
+    rdfs:label "role"@en .
     
 skos:Concept a owl:Class;
-    rdfs:label "Concept"@en .
+    rdfs:label "concept"@en .
 
 ado:00001 rdfs:subClassOf iao:0000310;
     iao:0000115 "A qualification awarded to a student upon successful completion of a course of study in higher education, usually at a college or university"@en;
     iao:0000119 <https://en.wikipedia.org/wiki/Academic_degree> ;
-    rdfs:label "Academic Degree"@en .
+    rdfs:label "academic degree"@en .
     
 ado:10001 rdfs:subClassOf iao:0021001;
     iao:0000115 "The process by which an academic degree is conferred on an individual.  The individual receiving the degree participates, as well as the organization."@en ;
     iao:0000116 "This is a deontic document act, creating a role, which then exists in perpetuity, and creating the academic degree document"@en ;
-    rdfs:label "Degree Granting Act"@en; .
+    rdfs:label "degree granting act"@en; .
     
 ado:10002 rdfs:subClassOf bfo:0000035 ;
     iao:0000115 "The instant of the granting of the degree"@en;
-    rdfs:label "Date degree granted"@en .
+    rdfs:label "date degree granted"@en .
     
 ado:10003 rdfs:subClassOf bfo:0000015 ;
     iao:0000115 "The process of education of a student following a course of study"@en;
     rdfs:label "education process"@en .
     
-ado:10005 rdfs:subClassOf bfo:0000023 ;
-    iao:0000115 "The role which inheres in a person as an output of a degree granting process"@en;
+ado:10004 rdfs:subClassOf bfo:0000023 ;
+    iao:0000115 "The role which inheres in an organization as an output of a degree granting process. Mutually dependent with the degree recipient role."@en;
     iao:0000116 "Another deontic idea here."@en;
-    rdfs:label "Degree Recipient"@en .
+    rdfs:label "degree conferrer"@en .
+    
+ado:10005 rdfs:subClassOf bfo:0000023 ;
+    iao:0000115 "The role which inheres in a person as an output of a degree granting process.  Mutually dependent with the conferrer role."@en;
+    iao:0000116 "Another deontic idea here."@en;
+    rdfs:label "degree recipient"@en .
 
 # Object Properties
     
@@ -110,6 +115,11 @@ ado:20006 a owl:ObjectProperty ;
     rdfs:range ado:00001 ;
     rdfs:label "has degree output"@en . 
     
+ado:20007 a owl:ObjectProperty ;
+    rdfs:domain ado:10001 ;
+    rdfs:range ado:10004 ;
+    rdfs:label "creates conferrer role"@en .  
+    
 bfo:20001 a owl:ObjectProperty ;
     rdfs:domain bfo:0000015 ;
     rdfs:range bfo:0000035 ;
@@ -140,7 +150,7 @@ iao:0000235 a owl:ObjectProperty ;
 ado:30001 a owl:DatatypeProperty ;
     rdfs:domain bfo:0000035 ;
     rdfs:range xsd:dateTime ;
-    rdfs:label "hasInstantValue"@en .
+    rdfs:label "has instant value"@en .
     
 ado:30002 a owl:DatatypeProperty ;
     rdfs:domain ado:10001 ;
@@ -162,20 +172,25 @@ ado:30004 a owl:DatatypeProperty ;
 #  :Joan a :Person .
 #  :MIT a :Organization .
 #
-#  :DGP a :DegreeGrantingProcess .
+#  :DGP a :degreeGrantingAct .
 #  :MIT :degreeGrantingOrganization :DGP .
 #  :Joan :degreeRecipient :DGP .
-#  :DGP :createsRole :A .
-#  :A a :DegreeRecipientRole .
+#  :DGP :createsRecipientRole :A .
+#  :A a :degreeRecipientRole .
 #  :A :inheresIn Joan .
-#  :DGP :hasDocumentOutput :B .
-#  :B a :BachelorOfScienceDegree .
-#  :DGP :hasTopic :GeographyTopic .
-#  :DGP :hasPart :C .
-#  :C a :DateDegreeGranted .
-#  :C :hasInstantValue "2020-06-20T00.00"^^xsd:dateTime . 
+#  :DGP :createsConferrerRole :B .
+#  :B a :degreeConferrerRole .
+#  :B :inheresIn MIT .
+#  :DGP :hasDegreeOutput :C .
+#  :C a :bachelorOfScienceDegree .
+#  :C :isAbout :Geography .
+#  :Geography a skos:Concept .
+#  :DGP :hasDateGranted :D .
+#  :D a :DateDegreeGranted .
+#  :D :hasInstantValue "2020-06-20T00.00"^^xsd:dateTime . 
 #
 #  Who got the degree? Joan.  Who granted the degree? MIT.  When? 2020-06-20
 #  What degree did Joan receive?  BachelorOfScienceDegree.  What was the topic
-#  of this degree? Geography.
+#  of this degree? Geography. Does Jane have a degree?  Yes (Jane has degree recipient 
+#  role).  Does MIT confer degrees?  Yes (MIT has a degree conferrer role)
 
