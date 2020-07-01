@@ -27,7 +27,7 @@ a degree we can infer the super classes.  So, for example, A bachelor of arts de
 1. Work out deontic semantics.  The conferring of a degree is a deontic act with two outputs: 
 a role (degree recipient) and a document (the degree document).  The degree recipient role
 is associated with rights, privileges and obligations.
-1. Provide working examples to represent what VIVO an currently represent -- a degree is
+1. Provide working examples to represent what VIVO can currently represent -- a degree is
 conferred by an organization to an individual on a date with a type and a topic.
 1. Other tests include creation of NamedIndividuals from the classes.
 1. Discuss with VIVO Ontology Interest Group
